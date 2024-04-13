@@ -111,26 +111,225 @@
                 colspan/rowspan - specifes how much cells data can span
                 title - tooltip
             </div>
-            <div class="grid-item">used inside opening tag</div>
+            <div class="grid-item">used inside opening tag like this: &lt;a href="./stylesheet" id="link"&gt; &lt;/a&gt;</div>
+            <div class="grid-item">Additonal tags</div>
+            <div class="grid-item">
+                h1, h2, h3, -> h6 - headings
+                &lt;p&gt; - paragraph
+                &lt;a&gt; - anchor
+                &lt;button&gt; - button duh, use with psuedoclasses in css
+                &lt;em&gt;, &lt;strong&gt; - italic, bold text
+                &lt;hr&gt; - horizontal rule, adds a horizontal line
+                &lt;pre&gt; - preformatted text
+            </div>
+            <div class="grid-item">N/A</div>
+            <div class="grid-item">Form Attributes</div>
+            <div class="grid-item">
+                action - determines where the info is sent
+                method - assigns a HTTP verb in the HTTP request
+            </div>
+            <div class="grid-item">&lt;form action="./example.html" method="POST"&gt;&lt;/form&gt;</div>
+            <div class="grid-item">Input element</div>
+            <div class="grid-item">
+                creates a input field, has many types (attribute), self closing
+                
+                text - duh
+                password - protects input with asterisks/dots
+                number - also has step attribute, the lil buttons to increase/decrease
+                range - slider with min/max values
+                checkbox - use same name attribute for all checkboxes
+                name - necessary, think of it like an additional id attribute
+                value - not necessary but can put default value
+            </div>
+            <div class="grid-item">&lt;input id="numero" name="numeros"type="number" steps value=1&gt;</div>
+            <div class="grid-item">Label element</div>
+            <div class="grid-item">used to label input elements</div>
+            <div class="grid-item">&lt;label for="input-example"&gt;input field caption&lt;/label&gt;</div>
+            <div class="grid-item">Dropdown list</div>
+            <div class="grid-item">input field with list of options to pick from</div>
+            <div class="grid-item">&lt;select id="example" name"dropdown-example"&gt;&lt;option value="value-example"&gt;Example&lt;/option&gt;</div>
+            <div class="grid-item">Datalist input</div>
+            <div class="grid-item">created by using the list attribute in a input element</div>
+            <div class="grid-item">&lt;input id="datalist" name="datalist" type="text" list="datalist-example"&gt;
+                &lt;datalist id="datalist-example"&gt;
+                &lt;option value="value-example"&gt;Example&lt;/option&gt
+                &lt;/datalist&gt;
+                
+            </div>
+            <div class="grid-item">Textarea</div>
+            <div class="grid-item">A bigger variation of input type="text", has attributes to modify size: rows and cols
+            </div>
+            <div class="grid-item">&lt;textarea id="datalist-example" rows="5" col"30"&gt;default-text&lt;/textarea&gt;</div>
+            <div class="grid-item">Submit Form button</div>
+            <div class="grid-item">Use submit value for input type attribute and set value to send</div>
+            <div class="grid-item">&lt;input type="Submit" value="send"&gt;</div>
+            <div class="grid-item">Form validation attributes</div>
+            <div class="grid-item">Min/max = for range and number typed inputs
+                required - makes it required to input
+                minlength/maxlength - checks text length
+                pattern attribute - needs more research
+            </div>
+
         </div>
 
         <div id="css-grid" class="grid">
             <div class="grid-item" id="grid-item-title">CSS</div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item">awdaw</div>
-            <div class="grid-item">joew3</div>
-            <div class="grid-item">dwadwa</div>
-            <div class="grid-item">awdaw</div>
-            <div class="grid-item">awdaw</div>
-            <div class="grid-item">joew3</div>
-            <div class="grid-item">dwadwa</div>
-            <div class="grid-item">awdaw</div>
-            <div class="grid-item">awdaw</div>
-            <div class="grid-item">joew3</div>
-            <div class="grid-item">dwadwa</div>
-            <div class="grid-item">awdaw</div>
-            <div class="grid-item">awdaw</div>
+            <div class="grid-item">Ways to Stylize</div>
+            <div class="grid-item">CSS is used for UI, styling web pages essentially.
+                There are a couple of ways to stylize, using inline styling, CSS files, or an internal stylesheet. CSS file rulesets are the most optimal. Internal stylesheets are just CSS file rulesets in the HTML file.
+            </div>
+            <div class="grid-item">N/A</div>
+            <div class="grid-item">Specificty</div>
+            <div class="grid-item">The order by which the browser will decide which styles are applied. 
+                id > classes > type/element/tag
+            </div>
+            <div class="grid-item"># > . > p/h1/a/etc.</div>
+            <div class="grid-item">Chaining</div>
+            <div class="grid-item">When a html element has more than 2 selectors, utilize this</div>
+            <div class="grid-item">h1(Tag).className(class) { property: value; }</div>
+            <div class="grid-item">Descendant Combinator</div>
+            <div class="grid-item">stylizing selectors nested inside other HTML elements</div>
+            <div class="grid-item">.outer-element p /// &lt;div class="outer-element"&gt;&lt;p&gt;hello&lt;/p&gt;&lt;/div&gt;</div>
+            <div class="grid-item">Multiple selectors</div>
+            <div class="grid-item">simply use a comma between selectors to apply a style to more than 1 element at a time</div>
+            <div class="grid-item">h1, div { property: value; }</div>
+            <div class="grid-item">Selectors</div>
+            <div class="grid-item">Used to target specific html elements, multiple types of selectors ///
+                type - p, h1, div, etc.
+                . - class attribute
+                # - id attribute
+                * - universal, all elements will be stylized
+                [] - selects all elements with a certain attribute
+                :: - psuedo-element, used with the content property, 
+                : - psuedo-class, used with link states
+                + - Adjacent sibling combinator,  selects two elements that are immediately next to each other
+            </div>
+            <div class="grid-item">N/A</div>
+            <div class="grid-item">Link states</div>
+            <div class="grid-item">Active, hover, visited, link</div>
+            <div class="grid-item">N/A</div>
+            <div class="grid-item">Visual Rules</div>
+            <div class="grid-item">font-family - changes font
+                Font-size - changes the font size
+                Font-weight – controls how bold or thin text appears
+                Font-style – italicize text
+                Letter-spacing – sets the horizontal spacing between individual characters in a element
+                Word-spacing – sets the horizontal space between words
+                Line-height – sets how tall each line containing text will be, can be unitless like 1.2 or a length value (px, percent, em)
+                Text-transform – text can be styled all uppercase or all lowercase
+                Text-align – aligns text
+                Text-decoration – can make stuff underlined
+                Color + Background-color – duh
+                Opacity – measure of how transparent an element is, measured from 0-1 (0% to 100%)
+                !important – can be applied to specific declarations, overrides any style no matter how specific. Use sparingly.
+                Cursor –  the user’s cursor should change from the default appearance to a pointing hand.
+                Overflow - property that sets the desired behavior when content does not fit in parent element
+                float - allows other elements to flow around it
+                Clear property – specifies how elements should behave when they bump into each other on the page.
+                Text-shadow → 1px 1px 1px (first number for horizontal offset, second for vertical, third number for blur) can add color too
+                Box shadow – similar to previous
+                Zindex - controls how far/back elements appear
+                padding: The amount of space between the content area and the border.
+                border: The thickness and style of the border surrounding the content area and padding.
+                margin: The amount of space between the border and the outside edge of the element.
+                Visibility property – elements can be hidden from view with this
+                Box-sizing property – controls the type of box model the browser should use when interpreting a web page
+                Border-box – a different type of box-model, avoids the dimensions issues presented with content-box. </div>
+            <div class="grid-item">N/A</div>
+            <div class="grid-item">Position</div>
+            <div class="grid-item">The different ways a element can be positioned:  ///
+                static - the default value (it does not need to be specified) [Remains in flow]
+                Relative – This value allows you to position an element relative to its default static position on the web page. [Remains in flow]
+                Absolute – When an element’s position is set to absolute, all other elements on the page will ignore the element and act like it is not present on the page. It will be positioned relative to its closest positioned parent element [DOES NOT remain in flow]
+                Fixed – We can fix an element to a specific position on the page (regardless of user scrolling). Accompanied by top, right, bottom, left [DOES NOT remain in flow]
+                Sticky – The sticky value is another position value that keeps an element in the document flow as the user scrolls, but sticks to a specified position as the page is scrolled further. Uses top, right, bottom, left, and  [Remains in flow]
+            </div>
+            <div class="grid-item">N/A</div>
+            <div class="grid-item">Background Images</div>
+            <div class="grid-item">Background-image: url(“”);
+                Must-haves
+                Background-repeat: no-repeat;
+                Background-position: center;
+                Background-attachment: fixed;
+                Background-size: cover;
+                </div>
+            <div class="grid-item">N/A</div>
+            <div class="grid-item">Transform</div>
+            <div class="grid-item"> css property that lets you rotate, scale, skew, or translate an element
+            </div>
+            <div class="grid-item">For y, positive is down, negative is up
+                translateX – x axis
+                translateY – y axis
+                Translate – both axis
+                rotateX(90deg)
+                rotateY(90deg)
+                scaleX(1.1)
+                scaleY(2)
+            </div>
+            <div class="grid-item">Animations</div>
+            <div class="grid-item">Used to make elements animated</div>
+            <div class="grid-item">Format: @keyframes animationName {}
+                Values:
+                Animation-name
+                Animation-duration
+                Animation-delay
+                Animation-direction – specifies whether an animation should be played forwards, backwards or in alternate cycles.
+                Animation-iteration-count – how many times the animation should run
+                From{}, to{}
+                Percentages used to indicate a point in time of animation so if the color of something changes midway through I would do: 50% {animation}.
+                Ex: 
+                </div>
+            <div class="grid-item">Flexbox</div>
+            <div class="grid-item">
+                a tool that greatly simplifies how to position elements.
+                
+                Flexbox layout consists of flex containers and flex items. Flex containers contain flex items, and any element can be a flex container. They help create responsive websites by adjusting child elements based on container size. To designate an element as a flex container, set its display property to flex or inline-flex.
+
+                Flex containers have two axes: the main axis and the cross axis. The main axis positions flex items using properties like justify-content, flex-wrap, flex-grow, and flex-shrink. The cross axis positions flex items using align-items and align-content.
+
+                Key properties:
+
+                Flex: Changes child element behavior without starting new lines.
+                Inline-flex: Creates inline flex containers.
+                Justify-content: Positions items left to right with options like flex-start, flex-end, center, space-around, and space-between.
+                Align-items: Vertically spaces flex items with options like flex-start, flex-end, center, baseline, and stretch.
+                Flex-grow: Specifies if items should grow to fill a container, using numerical values.
+                Flex-shrink: Opposite of flex-grow, defaults to 1.
+                Flex-basis: Specifies item width before stretching or shrinking.
+                Flex: Shorthand for flex-grow, flex-shrink, and flex-basis.
+                Flex-wrap: Wraps items to the next line when necessary, with options wrap, wrap-reverse, and nowrap.
+                Align-content: Aligns elements within a single row, with options like flex-start, flex-end, center, space-between, space-around, and stretch.
+                Flex-direction: Switches main and cross axes with options row, row-reverse, column, and column-reverse.
+                Flex-flow: Shorthand for flex-wrap and flex-direction.
+            </div>
+            <div class="grid-item">N/A</div>
+            <div class="grid-item">Grid Basics</div>
+            <div class="grid-item">Grid containers and items function similarly to flex containers and items.
+                display: grid creates a block-level grid, while display: inline-grid creates an inline grid.
+                Grids initially contain only 1 column, which can be expanded using grid-template-columns and rows using grid-template-rows.
+                grid-template-columns defines the number and width of columns, while grid-template-rows does the same for rows.
+                Fraction unit and repeat function are useful for defining sizes and repetitions of rows/columns.
+                minmax() sets minimum and maximum sizes for rows and columns.
+                grid-gap and gap add space between rows and columns, with gap being the shorthand for both.</div>
+            <div class="grid-item">N/A</div>
+            <div class="grid-item">Grid Items</div>
+            <div class="grid-item">Grid lines start at 1 and end at 1 greater than the number of rows or columns.
+                grid-row-start and grid-row-end combine to make single grid items span multiple rows, similar to grid-column-start and grid-column-end for columns.
+                grid-row and grid-column are shorthand properties for these.
+                grid-area combines all properties for a comprehensive layout definition.</div>
+            <div class="grid-item">N/A</div>
+            <div class="grid-item">Advanced Grid</div>
+            <div class="grid-item">Grid layout has column (block) and row (inline) axes.
+                grid-template-area allows naming sections of the webpage for grid items.
+                justify-items and align-items position items along the row and column axes.
+                justify-content and align-content position the entire grid along these axes.
+                justify-self and align-self override item alignment properties for individual items.</div>
+            <div class="grid-item">N/A</div>
+            <div class="grid-item">Implicit and Explicit Grids</div>
+            <div class="grid-item">The implicit grid algorithm determines default behavior for grid items beyond specified grid dimensions.
+                grid-auto-rows and grid-auto-columns specify dimensions for implicitly added rows/columns.
+                grid-auto-flow determines whether new elements should fill rows or columns, with an option for denser packing.</div>
+            <div class="grid-item">N/A</div>
         </div>
 
         <div id="js-grid" class="grid">

@@ -45,6 +45,8 @@ a:active {
     background-color: rgb(0, 0, 0);
     color: orange;
     visibility: hidden;
+    overflow: auto;
+    word-wrap: break-word;
 }
 
 #grid-item-title {
